@@ -1,5 +1,6 @@
 ﻿using FundamentosOO;
 using System.Net.WebSockets;
+using System.Runtime.CompilerServices;
 using System.Security.Cryptography.X509Certificates;
 
 internal class Program
@@ -135,11 +136,56 @@ internal class Program
         Console.WriteLine("===================================================");
 
         Console.WriteLine(" ");
+
         Funcionario func1 = new Funcionario();
         func1.Nome = "Fábio";
         func1.Idade = 34;
         func1.Cargo = "Caixa";
         func1.Salario = 1320.00;
         func1.Apresentar();
+
+        Console.WriteLine("===================================================");
+
+        Console.WriteLine(" ");
+        //Instanciando um objeto Animal
+        //Animal animal1 = new Animal();
+
+        ////Preencher os atributos do Animal
+        //animal1.Especie = "Cachorro";
+
+        ////Chamando o Método do Objeto
+        //animal1.emitirSom();
+
+        ////Imprimindo a informação na tela
+        //Console.WriteLine("O Animal " + animal1.Especie + " emitiu um som");
+
+        //Instanciando um objeto da classe animal subclasse gato
+
+        Gato gato1 = new Gato();
+        gato1.Nome = "Maizena";
+        Console.WriteLine(gato1.Nome + " disse:");
+        gato1.emitirSom();
+        Gato gato2 = new Gato();
+        gato2.Nome = "Tom";
+        Console.WriteLine(gato2.Nome + " disse:");
+        gato1.emitirSom();
+
+        Porco porco1 = new Porco();
+        porco1.Nome = "Napoleão";
+        Console.WriteLine(porco1.Nome + " disse:");
+        porco1.emitirSom();
+
+        Galinha galinha1 = new Galinha();
+        galinha1.Nome = "Gertrudes";
+        Console.WriteLine(galinha1.Nome + " disse:");
+        galinha1.emitirSom();
+
+
+        Console.WriteLine("===================================================");
+
+        Console.WriteLine(" ");
+
+        Personagem personagem1 = new Personagem();
+
     }
 }
