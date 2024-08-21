@@ -20,7 +20,15 @@ namespace FundamentosOO
         public int Vida { get; set; }
 
         public virtual void Apresentar() { }
-        public virtual void Evoluir() { }
+        public virtual void Evoluir()
+        {
+
+            this.Nivel += 1;
+            this.Vida += 100;
+            this.Forca += 25;
+            this.Agilidade += 25;
+            this.Inteligencia += 25;
+        }
 
         public virtual int Atacar()
         {
